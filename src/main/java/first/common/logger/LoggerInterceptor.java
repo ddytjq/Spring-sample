@@ -7,6 +7,8 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
+import first.common.logger.LoggerInterceptor;
+
 public class LoggerInterceptor extends HandlerInterceptorAdapter {
     protected Log log = LogFactory.getLog(LoggerInterceptor.class);
      
