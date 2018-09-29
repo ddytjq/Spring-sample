@@ -8,10 +8,10 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
-import first.common.logger.LoggerInterceptor;
+import first.sample.controller.SampleController;
 
 public class LoggerInterceptor extends HandlerInterceptorAdapter {
-	protected Log log = LogFactory.getLog(LoggerInterceptor.class);
+	protected Log log = LogFactory.getLog(SampleController.class);
 	
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
