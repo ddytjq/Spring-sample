@@ -12,6 +12,7 @@ public class SampleController {
     @RequestMapping(value="/sample/openSampleList.do")
     public ModelAndView openSampleList(Map<String,Object> commandMap) throws Exception{
         ModelAndView mv = new ModelAndView("");
+        System.out.println("Gggg");
         log.debug("인터셉터 테스트");
         
         return mv;
