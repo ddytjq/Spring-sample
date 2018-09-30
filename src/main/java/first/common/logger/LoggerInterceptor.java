@@ -10,7 +10,6 @@ import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 import first.sample.controller.SampleController;
 
-
 public class LoggerInterceptor extends HandlerInterceptorAdapter {
 	protected Log log = LogFactory.getLog(SampleController.class);
 	
