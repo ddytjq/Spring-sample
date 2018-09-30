@@ -10,13 +10,14 @@ import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 import first.sample.controller.SampleController;
 
+
 public class LoggerInterceptor extends HandlerInterceptorAdapter {
 	protected Log log = LogFactory.getLog(SampleController.class);
 	
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
 		if (log.isDebugEnabled()) {
-			log.debug("==========          START         ==========");
+			log.debug("======================================          START         ======================================");
 			log.debug(" Request URI \t:  " + request.getRequestURI());
 		}
 		return super.preHandle(request, response, handler);
@@ -25,7 +26,7 @@ public class LoggerInterceptor extends HandlerInterceptorAdapter {
 	@Override
 	public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
 		if (log.isDebugEnabled()) {
-			log.debug("==========           END          ==========\n");
+			log.debug("======================================           END          ======================================\n");
 		}
 	}
 }
