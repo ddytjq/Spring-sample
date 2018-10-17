@@ -1,8 +1,6 @@
-## Spring-sample
+## Manage my homepage using Spring Framework
 
-#### Manage my homepage using Spring Framework
-
-#### Development environment
+#### Environment
 * IDE : Eclipse Oxygen.3a Release
 * JDK : JAVA SE 9.0.1
 * Tomcat : Tomcat 9.0.12
