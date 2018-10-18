@@ -86,7 +86,7 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
-            <version>${org.springframework-version}</version>
+            <version>4.3.17.RELEASE</version>
         </dependency>
         
         <dependency>
