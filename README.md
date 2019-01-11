@@ -11,7 +11,6 @@
 #### Framework
 * Spring 3.2.4
 * MyBatis 3.2.2
-* Docker - Oracle
 
 #### build
 
