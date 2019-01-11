@@ -24,4 +24,7 @@ $ lsof -PiTCP -sTCP:LISTEN
 
 *3. Running Tomcat*
 
-#### http://localhost:8080/first/sample/.do
+#### Screenshot
+
+* http://localhost:8080/first/sample/openBoardList.do
+![image](./image.jpg)
