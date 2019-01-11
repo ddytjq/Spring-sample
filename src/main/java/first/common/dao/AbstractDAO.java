@@ -7,11 +7,15 @@ import org.apache.commons.logging.LogFactory;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 
+
+// DAO : Data Access Object
+
 public class AbstractDAO {
 	protected Log log = LogFactory.getLog(AbstractDAO.class);
 	
 	@Autowired
 	private SqlSessionTemplate sqlSession;
+	//context-mapper.xml의 연동 핵심 객체 생성
 	
 	protected void printQueryId(String queryId) {
 		if(log.isDebugEnabled()){
